@@ -1,0 +1,376 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,600;1,700&display=swap');
+
+/* Variables */
+:root {
+    --main-color: #ac99e8;
+    --second-color: #c4b3ff;
+    --third-color: #e0d8fd;
+    --white: #f8f8f8;
+    --second-white: #ececec;
+    --logout: #ee4d4d;
+    --black: #363636;
+    --gray: #696969;
+}
+
+/* Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: var(--second-white);
+}
+
+header {
+    background: var(--main-color);
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    padding: 30px 40px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo h1 {
+    color: var(--white);
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+header .main-menu {
+    margin-top: 50px;
+}
+
+header ul li img {
+    width: 20px;
+    height: 100%;
+}
+
+header ul li a{
+    margin: 20px 0px;
+    display: flex;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+header ul li a p {
+    margin-left: 20px;
+}
+
+header .profile-menu {
+    margin-top: 30px;
+}
+
+header .profile-menu h1 {
+    color: var(--white);
+    font-size: 17px;
+}
+
+header .logout-button {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+}
+
+header .logout-button button {
+    border: none;
+    background: var(--white);
+    padding: 7px 90px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    color: var(--logout);
+    font-weight: 600;
+    font-size: 11px;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+main {
+    position: relative;
+    left: 20%;
+    height: 100%;
+    padding: 20px 25px;
+    width: 80%;
+}
+
+main .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+main .heading .heading-2 {
+    display: flex;
+    align-items: center;
+}
+
+main .heading .heading-2 .notification {
+    background: rgb(238, 238, 238);  
+    margin:  0px 30px;
+    padding: 15px 16px;
+    border-radius: 50%;
+}
+
+main .heading .heading-2 .notification i{
+}
+
+main .heading .heading-2 .profile img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+/* HASIL COPYAN freefrontend.com */
+main .heading .search-bar {
+    display: flex;
+}
+
+main .heading .search-bar .box{
+    position: relative;
+}
+
+main .heading .search-bar .input {
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    background: none;
+    border: 3px solid #ac99e8;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    font-size: 16px;
+    color: #ac99e8;
+    outline: none;
+    transition: .5s;
+    padding-left: 25px;
+}
+main .heading .search-bar .box:hover .input{
+    width: 750px;
+    background: var(--white);
+    border-radius: 50px;
+}
+
+main .heading .search-bar .box i{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    color: #ac99e8;
+    transition: .2s;
+}
+
+main .heading .search-bar .box:hover i{
+    opacity: 0;
+    z-index: -1;
+}
+/* endregion */
+
+main {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+main .hero {
+    display: flex;
+    position: relative;
+}
+
+main .hero .hero-1 {
+    width: 70%;
+    margin-right: 15px;
+}
+
+main .hero .hero-1 .discover-nfts {
+    background: linear-gradient(180deg, var(--main-color), var(--second-color));
+    padding: 50px;
+    border-radius: 20px;
+}
+
+main .hero .hero-1 .discover-nfts h1{
+    color: var(--white);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+main .hero .hero-1 .discover-nfts button {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    background: var(--white);
+}
+
+main .hero .hero-1 .discover-nfts button a {
+    font-weight: 600;
+    color: var(--main-color);
+    font-size: 17px;
+}
+
+main .trending-auction {
+    margin-top: 35px;
+}
+
+main .trending-auction .heading-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .trending-auction .heading-2 p {
+    font-size: 24px;
+    color: var(--black);
+    font-weight: 700;
+}
+
+main .trending-auction .heading-2-menu ul {
+    display: flex;
+}
+
+main .heading-2-menu ul li {
+    margin: 10px;
+}
+
+main .heading-2-menu ul li a {
+    color: var(--gray);
+    font-weight: 600;
+}
+
+main .nft-body {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    margin-top: 20px;
+}
+
+main .nft-box {
+    border-radius: 20px;
+    background-color: var(--white);
+    padding: 8px;
+    box-shadow: 0 28px 28px rgba(0,0,0,0.07), 0 10px 10px rgba(0,0,0,0.05);
+}
+
+main .nft-box .nft-image {
+    height: 250px;
+    border-radius: 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .nft-text {
+    margin: 15px;
+}
+
+main .nft-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .nft-name h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+main .nft-name p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--gray);
+}
+
+main .nft-owner {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+main .nft-owner .nft-username {
+    color: var(--gray);
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+main .nft-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+main .nft-price h1{
+    font-size: 18px;
+    color: var(--gray);
+    font-weight: 600;
+}
+
+main .top-creator {
+    border-radius: 20px;
+    background-color: var(--white);
+    padding: 15px;
+    box-shadow: 0 28px 28px rgba(0,0,0,0.07), 0 10px 10px rgba(0,0,0,0.05);
+}
+
+main .top-creator-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .top-creator-heading h1 {
+    font-size: 24px;
+}
+
+main .top-creator-heading a {
+    font-size: 16px;
+    color: var(--gray);
+}
+
+main .top-creator-username {
+    display: flex;
+    align-items: center;
+    margin: 25px 0px;
+}
+
+main .top-creator-username h1 {
+    font-size: 14px;
+    margin: 0px 10px 0px 5px;
+}
+
+
+main .top-creator-username p {
+    font-size: 12px;
+    margin-left: 5px;
+    color: var(--gray);
+}
+
+main .top-creator-username div {
+    margin-left: 5spx;
+}
+
+main .top-creator-username img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+main .top-creator-username button {
+    margin: 0px 0px 0px 15px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: none;
+    background: var(--third-color);
+}
+
+main .top-creator-username button a {
+    color: var(--main-color);
+}
